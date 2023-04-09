@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <section className='lg:grid grid-cols-4 text-center gap-4 py-4'>
+            <section className='lg:grid grid-cols-4 gap-4 py-4'>
                 {
                     categories.map(category => <JobsCat category={category} key={category.id}></JobsCat>)
                 }
