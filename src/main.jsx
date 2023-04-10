@@ -24,10 +24,10 @@ const router = createBrowserRouter([
         path: '/jobdetails/:id',
         element: <JobDetails />,
         loader: async ({ params }) => {
-          const response = await fetch(`job_data.json`);
-          const data = await response.json();
+          const res = await fetch(`job_data.json`);
+          const data = await res.json();
           const jobId = params.id;
-          const job = data.find(job => job.id === jobId);
+          const job = data?.find(job => job.id === jobId);
           return job;
         }
       }
@@ -45,12 +45,12 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '*',
+        element: <ErrorPage></ErrorPage>
       }
     ]
-  },
-  {
-    path: '*',
-    element: <ErrorPage></ErrorPage>
   }
 ])
 

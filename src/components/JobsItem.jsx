@@ -24,7 +24,7 @@ const JobsItem = ({ job }) => {
                         <p>$ {salary}</p>
                     </div>
                     <div className="card-actions">
-                        <Link to={`/jobdetails/${id}`} className="my-btn">View Details</Link>
+                        <Link to={`/jobdetails/${id}`} className="my-btn bg-green-200 btn-outline">View Details</Link>
                     </div>
                 </div>
             </div>

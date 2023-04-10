@@ -11,7 +11,7 @@ const AppliedCart = ({job}) => {
             <div className='col-span-2'>
                 <h2 className='font-semibold text-2xl'>{job_title}</h2>
                 <p>{company_name}</p>
-                <button className="btn bg-green-200 btn-outline btn-primary  mt-4">{job_type}</button>
+                <button className="btn btn-sm bg-green-200 btn-outline btn-primary  mt-4">{job_type}</button>
                 <div className='flex items-center justify-between py-2'>
                         <p className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -22,7 +22,7 @@ const AppliedCart = ({job}) => {
                     </div>
             </div>
             <div className='flex justify-end'>
-                <Link to={`/jobdetails/${id}`}><h2 className='my-btn'>View Detail</h2></Link>
+                <Link to={`/jobdetails/${id}`}><h2 className='my-btn bg-green-200 btn-outline '>View Detail</h2></Link>
             </div>
         </div>
     );
