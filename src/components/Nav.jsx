@@ -8,6 +8,7 @@ const Nav = () => {
             <ul>
                 <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to="/">Home</NavLink>
                 <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to="/static">Statistic</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to="/blog">Blogs</NavLink>
                 <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to="/appliedjob">Applied Job</NavLink>
                 <button className='my-btn'>Apply Circular</button>
             </ul>

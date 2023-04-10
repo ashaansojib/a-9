@@ -9,6 +9,7 @@ import JobDetails from './components/JobDetails'
 import AppliedJob from './components/AppliedJob'
 import cartProductsLoader from './Utils/CardData'
 import ErrorPage from './components/ErrorPage'
+import Blog from './components/Blog'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         path: '/static',
         element: <Static></Static>,
         loader: ()=> fetch('marks.json')
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
       }
     ]
   },
