@@ -3,6 +3,7 @@ import Header from './Header';
 import JobsCat from './JobsCat';
 import JobsItem from './JobsItem';
 
+
 const Home = () => {
     // category data fetch
     const [categories, setCategories] = useState([]);
@@ -19,6 +20,8 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setJobs(data))
     }, []);
+    // add to local storage
+
     return (
         <div>
             <Header></Header>

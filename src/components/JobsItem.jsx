@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const JobsItem = ({ job }) => {
+    
     const { id, logo, company_name, job_title, job_type, location, salary } = job;
     return (
         <div>
