@@ -20,7 +20,11 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setJobs(data))
     }, []);
-    // add to local storage
+    // show more button
+    const [showAll, setShowAll] = useState(false);
+    const handleShowAll = () =>{
+        setShowAll(true);
+    };
 
     return (
         <div>
@@ -47,14 +51,14 @@ const Home = () => {
                 </div>
                 <div className='lg:w-[900px] mx-auto lg:grid grid-cols-2 gap-5 justify-around'>
                     {
-                        jobs.map(job => <JobsItem
+                        jobs.slice(0, showAll ? 6 : 4).map(job => <JobsItem
                             key={job.id}
                             job={job}
                         ></JobsItem>)
                     }
                 </div>
                 <div className='text-center pt-4'>
-                    <button className='my-btn'>Show All</button>
+                    {!showAll && ( <button onClick={handleShowAll} className='my-btn'>Show All</button>)}
                 </div>
             </section>
         </div>
