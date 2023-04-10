@@ -51,7 +51,7 @@ const Home = () => {
                 </div>
                 <div className='lg:w-[900px] mx-auto lg:grid grid-cols-2 gap-5 justify-around'>
                     {
-                        jobs.slice(0, showAll ? 6 : 4).map(job => <JobsItem
+                        jobs?.slice(0, showAll ? 6 : 4).map(job => <JobsItem
                             key={job.id}
                             job={job}
                         ></JobsItem>)

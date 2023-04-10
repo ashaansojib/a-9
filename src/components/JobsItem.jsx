@@ -3,15 +3,18 @@ import { Link } from 'react-router-dom';
 
 const JobsItem = ({ job }) => {
     
-    const { id, logo, company_name, job_title, job_type, location, salary } = job;
+    const { id, logo, company_name, job_title, job_type, location, salary, schedule } = job;
     return (
         <div>
             <div className="card card-compact border shadow-xl">
-                <figure><img className='h-52 w-52 m-10' src={logo} alt="Shoes" /></figure>
+                <figure><img className='h-52 w-52 m-10' src={logo} alt="card" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{job_title}</h2>
                     <p className='text-xl'>{company_name}</p>
-                    <button className="btn btn-outline btn-success w-40">{job_type}</button>
+                    <div className='flex space-x-2'>
+                    <button className="btn btn-sm btn-outline btn-success w-40">{job_type}</button>
+                    <button className="btn btn-sm btn-outline btn-success w-40">{schedule}</button>
+                    </div>
                     <div className='flex items-center'>
                         <p className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
