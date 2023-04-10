@@ -15,6 +15,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         path: '/jobdetails/:id',
         element: <JobDetails />,
         loader: async ({ params }) => {
-          const res = await fetch(`job_data.json`);
+          const res = await fetch(`/job_data.json`);
           const data = await res.json();
           const jobId = params.id;
           const job = data?.find(job => job.id === jobId);
