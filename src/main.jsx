@@ -8,6 +8,7 @@ import Static from './components/Static'
 import JobDetails from './components/JobDetails'
 import AppliedJob from './components/AppliedJob'
 import cartProductsLoader from './Utils/CardData'
+import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         element: <Static></Static>
       }
     ]
+  },
+  {
+    path: '*',
+    element: <ErrorPage></ErrorPage>
   }
 ])
 

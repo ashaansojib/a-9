@@ -28,7 +28,7 @@ const Home = () => {
             <section className='py-4'>
                 <div className='text-center pb-4'>
                     <h2 className='text-4xl font-bold'>Available Job Category List</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio officiis id pariatur repudiandae aspernatur, sit voluptate illum? Cum, temporibus.</p>
+                    <p className='lg:w-[700px] mx-auto'>I am writing to express my interest in the available job at your organization. I am a highly motivated and skilled individual with a passion for field/industry. With number of years of experience in relevant skills/industry, I am confident in my ability to excel in this role. I am eager to bring my skills and expertise to your team and contribute to the success of your organization. Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.</p>
                 </div>
                 <div className='lg:grid grid-cols-4 gap-4 '>
                     {
@@ -43,7 +43,7 @@ const Home = () => {
             <section className='py-4'>
                 <div className='text-center pb-4'>
                     <h2 className='text-4xl font-bold'>Select and Choose Your Jobs</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio officiis id pariatur repudiandae aspernatur, sit voluptate illum? Cum, temporibus.</p>
+                    <p className='lg:w-[700px] mx-auto'>I am excited to accept the job offer at [company name]. After careful consideration of the role and the company's values, I believe that this is the perfect opportunity for me to further my career and make meaningful contributions to the organization. I am eager to work with the talented team members and grow both personally and professionally. Thank you for the opportunity, and I am looking forward to joining the team.</p>
                 </div>
                 <div className='lg:w-[900px] mx-auto lg:grid grid-cols-2 gap-5 justify-around'>
                     {

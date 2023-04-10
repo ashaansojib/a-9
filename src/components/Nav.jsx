@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <div className='lg:flex justify-between p-2'>
+        <div className='lg:flex justify-between p-2  border-b-2'>
             <Link to="/"> <h2 className='font-bold text-2xl'>Jobs Hunter</h2></Link>
             <ul>
                 <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to="/">Home</NavLink>
