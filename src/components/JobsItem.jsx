@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JobsItem = ({ job }) => {
-    const { logo, company_name, job_title, job_type, location, salary } = job;
+    const { id, logo, company_name, job_title, job_type, location, salary } = job;
     return (
         <div>
             <div className="card card-compact border shadow-xl">
@@ -19,7 +20,7 @@ const JobsItem = ({ job }) => {
                         <p>$ {salary}</p>
                     </div>
                     <div className="card-actions">
-                        <button className="my-btn">View Details</button>
+                        <Link to={`/jobdetails/${id}`} className="my-btn">View Details</Link>
                     </div>
                 </div>
             </div>
