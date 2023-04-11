@@ -3,7 +3,7 @@
 
 - In this website has a home components and as well header, footer, errorPage, jobItem, jobDescription, Applied Jobs, Static reChart, Blog area and some hard code data.
 
-- In this website, has some hidden functionalities like filter() method to filtered specifiq matched data. In the header navbar section has active singnal. All the data distribute by using map() method to create dynamic item card. In this projects i used tailwindcss and daisyUi for acctructive this site. On the other hand, router has implemented here. All the router functionallity used in this jobHunter web Projects. 
+- In this website, has some hidden functionalities like filter() method to filtered specifiq matched data. In the header navbar section has active singnal. All the data distribute by using map() method to create dynamic item card. In this projects i used tailwindcss and daisyUi for acctructive this site. On the other hand, router has implemented here. All the router functionallity used in this jobHunter web Projects. By Default home page show 4 item job post and has a dynamic see more button. Wehen i click see more button then fetch all data from data.json file. Finnally, All the components and all the function are tested by me. The jobHunter website is live now!
 
 ## Live Link
 Netlify Host Link -> [JobHunter](https://tourmaline-raindrop-6c4d11.netlify.app/)

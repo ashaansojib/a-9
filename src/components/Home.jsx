@@ -27,7 +27,7 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <>
             <Header></Header>
             <section className='py-4'>
                 <div className='text-center pb-4'>
@@ -61,7 +61,7 @@ const Home = () => {
                     {!showAll && ( <button onClick={handleShowAll} className='my-btn'>Show All</button>)}
                 </div>
             </section>
-        </div>
+        </>
     );
 };
 
